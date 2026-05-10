@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productos - Solaris Peruvian</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;700&family=Epilogue:wght@400;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+     <link rel="shortcut icon" href="assets/img/portadas/logo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/estilos.css">
+
+    
+</head>
+
+<body>
+
+    
+
+   <header>
+    <nav class="navbar navbar-expand-lg fixed-top py-3 shadow-sm"
+     style="background-color: #dbc0af;">
+        <div class="container">
+               <a href="index.html" class="logo-tienda">
+                <span class="lune text-[#472c19]">SOLEIL</span><br>
+                <span class="peruvian text-[#ffffff]">S  T   Y   L   E</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav gap-lg-4">
+                    <li class="nav-item"><a class="nav-link text-muted" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold text-dark border-bottom border-dark" href="productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link text-muted" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link text-muted" href="contactos.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+    
+    <main style="padding-top: 140px; padding-bottom: 80px;">
+        <div class="container">
+            
+            <div class="text-center mb-5">
+                <h1 class="display-4 font-serif mb-2">Colección Solaris</h1>
+                <p class="lead text-muted">30 piezas exclusivas diseñadas para ti.</p>
+                <section class="container my-5">
+
+    <!-- SLIDER -->
+<section class="mb-5">
+
+    <div id="sliderSolaris"
+         class="carousel slide"
+         data-bs-ride="carousel">
+
+        <div class="carousel-inner rounded-4 overflow-hidden">
+
+            <!-- SLIDE 1 -->
+            <div class="carousel-item active">
+                <img src="assets/img/productos/outfit1.png"
+                     class="d-block w-100 slider-mini"
+                     alt="Outfit 1">
+            </div>
+
+            <!-- SLIDE 2 -->
+            <div class="carousel-item">
+                <img src="assets/img/productos/outfit2.png"
+                     class="d-block w-100 slider-mini"
+                     alt="Outfit 2">
+            </div>
+
+            <!-- SLIDE 3 -->
+            <div class="carousel-item">
+                <img src="assets/img/productos/coleccion3.png"
+                     class="d-block w-100 slider-mini"
+                     alt="Maquillaje">
+            </div>
+
+        </div>
+
+        <!-- FLECHA IZQUIERDA -->
+        <button class="carousel-control-prev"
+                type="button"
+                data-bs-target="#sliderSolaris"
+                data-bs-slide="prev">
+
+            <span class="carousel-control-prev-icon bg-dark rounded-circle p-3"></span>
+
+        </button>
+
+        <!-- FLECHA DERECHA -->
+        <button class="carousel-control-next"
+                type="button"
+                data-bs-target="#sliderSolaris"
+                data-bs-slide="next">
+
+            <span class="carousel-control-next-icon bg-dark rounded-circle p-3"></span>
+
+        </button>
+
+    </div>
+
+</section>
+
+</section>
+            </div>
+
+            <div class="filter-container d-flex justify-content-start justify-content-md-center gap-2 mb-5">
+                <button class="btn filter-btn active" onclick="filtrar('todos', this)">Todos</button>
+                <button class="btn filter-btn" onclick="filtrar('blusas', this)">Top</button>
+                <button class="btn filter-btn" onclick="filtrar('vestidos', this)">Vestidos</button>
+                <button class="btn filter-btn" onclick="filtrar('pantalones', this)">Pantalones</button>
+                <button class="btn filter-btn" onclick="filtrar('abrigos', this)">Abrigos</button>
+                <button class="btn filter-btn" onclick="filtrar('belleza', this)">Maquillaje</button>
+            </div>
+
+            <div class="row g-4" id="grid-productos"></div>
+        </div>
+    </main>
+
+
+    <footer class="py-5" style="background-color: #dbc0af;">
+    <div class="container">
+
+        <div class="row text-center text-md-start g-4 justify-content-between align-items-start">
+
+            <!-- LOGO -->
+            <div class="col-md-2">
+               <div class="col-md-2">
+    <div class="d-inline-block overflow-hidden rounded-circle border"
+         style="width: 140px; height: 140px; border-width: 2px !important;">
+
+        <img src="assets/img/portadas/logo.jpeg"
+             class="w-100 h-100 object-fit-cover"
+             alt="Logo Solaris">
+
+    </div>
+</div>
+            </div>
+
+            <!-- TIENDA -->
+            <div class="col-md-2">
+                <h6 class="fw-bold mb-4"
+                    style="color: #9b5f67; letter-spacing: 1px;">
+                    TIENDA
+                </h6>
+
+                <ul class="list-unstyled d-grid gap-2">
+                    <li>
+                        <a href="nosotros.html"
+                           class="text-decoration-none text-dark opacity-75">
+                           Nosotros
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="productos.html"
+                           class="text-decoration-none text-dark opacity-75">
+                           Productos
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contactos.html"
+                           class="text-decoration-none text-dark opacity-75">
+                           Contacto
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- INSPIRACIONES -->
+            <div class="col-md-2">
+                <h6 class="fw-bold mb-4"
+                    style="color: #9b5f67; letter-spacing: 1px;">
+                    INSPIRACIONES
+                </h6>
+
+                <ul class="list-unstyled d-grid gap-2">
+                    <li>
+                        <a href="https://pe.hm.com/"
+                           target="_blank"
+                           class="text-decoration-none text-dark opacity-75">
+                           H&M
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.aeo.com.pe/"
+                           target="_blank"
+                           class="text-decoration-none text-dark opacity-75">
+                           AMERICAN EAGLE
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://corporaciontextil.com.pe/"
+                           target="_blank"
+                           class="text-decoration-none text-dark opacity-75">
+                           CORP. TEXTIL
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- REDES SOCIALES -->
+            <div class="col-md-3">
+    <h6 class="fw-bold mb-4" style="color: #9b5f67; letter-spacing: 1px;">
+        REDES SOCIALES
+    </h6>
+
+    <ul class="list-unstyled d-grid gap-2">
+
+        <li>
+            <a href="https://instagram.com/luneperuvian" target="_blank"
+               class="text-decoration-none text-dark opacity-75 d-flex align-items-center gap-2">
+                <i class="bi bi-instagram"></i>
+                <span>@luneperuvian</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="https://facebook.com/luneperuvian" target="_blank"
+               class="text-decoration-none text-dark opacity-75 d-flex align-items-center gap-2">
+                <i class="bi bi-facebook"></i>
+                <span>/luneperuvian</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="https://tiktok.com/@luneperuvian" target="_blank"
+               class="text-decoration-none text-dark opacity-75 d-flex align-items-center gap-2">
+                <i class="bi bi-tiktok"></i>
+                <span>@luneperuvian</span>
+            </a>
+        </li>
+
+    </ul>
+</div>
+            <!-- LIBRO DE RECLAMACIONES -->
+            <div class="col-md-3 text-center">
+                <a href="libro-reclamaciones.html"
+                   class="text-decoration-none text-dark d-inline-block p-4 border border-secondary-subtle rounded-4 bg-white bg-opacity-25">
+
+                    <span class="material-symbols-outlined fs-1 text-secondary">
+                        menu_book
+                    </span>
+
+                    <p class="small fw-bold mb-0 mt-2 tracking-widest text-uppercase">
+                        Libro de <br> Reclamaciones
+                    </p>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- COPYRIGHT -->
+        <div class="text-center mt-5 pt-4 border-top border-secondary-subtle">
+            <p class="small text-muted mb-0">
+                &copy; 2026 Solaris Peruvian. Hecho con amor.
+            </p>
+        </div>
+
+    </div>
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+   <script src="assets/js/script.js"></script>
+
+    
+</body>
+</html>

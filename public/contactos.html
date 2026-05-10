@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto - Solaris Peruvian</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;700&family=Epilogue:wght@400;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+     <link rel="shortcut icon" href="assets/img/portadas/logo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/estilos.css">
+
+    <style>
+        .star-rating { direction: rtl; display: inline-flex; gap: 5px; }
+        .star-rating input { display: none; }
+        .star-rating label { color: #ccc; font-size: 30px; cursor: pointer; transition: color 0.2s; }
+        .star-rating label:hover, .star-rating label:hover ~ label, .star-rating input:checked ~ label { color: #f5b301; }
+        
+        .map-container {
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            height: 400px;
+        }
+
+        .social-btn {
+            transition: all 0.3s ease;
+            border-radius: 15px;
+            padding: 12px 20px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 600;
+        }
+
+        .social-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+
+<body>
+
+   <header>
+    <nav class="navbar navbar-expand-lg fixed-top py-3 shadow-sm"
+     style="background-color: #dbc0af;">
+        <div class="container">
+               <a href="index.html" class="logo-tienda">
+                <span class="lune text-[#472c19]">SOLEIL</span><br>
+                <span class="peruvian text-white">S  T   Y   L   E</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav gap-lg-4">
+                    <li class="nav-item"><a class="nav-link text-muted" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link text-muted" href="productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link text-muted" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold text-dark border-bottom border-dark" href="contactos.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+    <main style="padding-top: 130px; padding-bottom: 80px;">
+        <div class="container">
+            
+            <div class="row g-5 mb-5">
+                <div class="col-lg-7">
+                    <h1 class="display-4 font-serif mb-4">Conectemos</h1>
+                    <div class="map-container mb-4">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3942.753444458514!2d-78.5956!3d-9.0728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ab814e5b38743d%3A0x6b8d80!2sJr.%20Manuel%20Villavicencio%20167%2C%20Chimbote!5e0!3m2!1ses!2spe!4v1715000000000" 
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 d-flex flex-column justify-content-center">
+                    <h3 class="h4 font-serif mb-4">Síguenos en Redes</h3>
+                    <div class="d-grid gap-3">
+                        <a href="https://www.instagram.com/" target="_blank" class="social-btn bg-white text-dark shadow-sm">
+                            <span class="material-symbols-outlined text-danger">photo_camera</span> Instagram
+                        </a>
+                        <a href="https://www.tiktok.com/" target="_blank" class="social-btn bg-white text-dark shadow-sm">
+                            <span class="material-symbols-outlined">play_circle</span> TikTok
+                        </a>
+                        <a href="https://wa.me/51963713080" target="_blank" class="social-btn text-white" style="background-color: #25D366;">
+                            <span class="material-symbols-outlined">chat</span> WhatsApp Directo
+                        </a>
+                    </div>
+                    <div class="mt-5">
+                        <p class="mb-1 fw-bold">Ubicación:</p>
+                        <p class="text-muted">Jr. Manuel Villavicencio 167, Chimbote</p>
+                        <p class="mb-1 fw-bold">Horario:</p>
+                        <p class="text-muted fst-italic">Lun - Sáb: 10:30 a.m. - 9:00 p.m.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mt-5">
+                <div class="col-lg-8">
+                    <div class="p-4 p-md-5 rounded-5" style="background-color: var(--bg-creme);">
+                        <h2 class="h3 font-serif mb-4 text-center">Déjanos tu Calificación</h2>
+                        <form id="feedbackForm">
+                            <div class="mb-4">
+                                <label class="form-label fw-bold small">NOMBRE COMPLETO</label>
+                                <input type="text" id="nombre" class="form-control border-0 py-3 shadow-sm rounded-4" placeholder="Tu nombre" required>
+                            </div>
+                            <div class="mb-4 text-center">
+                                <label class="form-label d-block fw-bold small">CALIFICA TU EXPERIENCIA</label>
+                                <div class="star-rating">
+                                    <input type="radio" id="star5" name="rating" value="5 Estrellas" /><label for="star5" class="material-symbols-outlined">star</label>
+                                    <input type="radio" id="star4" name="rating" value="4 Estrellas" /><label for="star4" class="material-symbols-outlined">star</label>
+                                    <input type="radio" id="star3" name="rating" value="3 Estrellas" /><label for="star3" class="material-symbols-outlined">star</label>
+                                    <input type="radio" id="star2" name="rating" value="2 Estrellas" /><label for="star2" class="material-symbols-outlined">star</label>
+                                    <input type="radio" id="star1" name="rating" value="1 Estrella" /><label for="star1" class="material-symbols-outlined">star</label>
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <label class="form-label fw-bold small">COMENTARIO</label>
+                                <textarea id="mensaje" class="form-control border-0 py-3 shadow-sm rounded-4" rows="4" placeholder="¿Qué te pareció Solaris Peruvian?" required></textarea>
+                            </div>
+                            <button type="button" onclick="enviarWA()" class="btn btn-dark w-100 py-3 fw-bold border-0" style="background-color: var(--secondary-color); border-radius: 15px;">
+                                ENVIAR RESEÑA POR WHATSAPP
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+   <script src="assets/js/script.js"></script>
+
+    
+
+    <script>
+        function enviarWA() {
+            const nom = document.getElementById('nombre').value;
+            const msg = document.getElementById('mensaje').value;
+            const star = document.querySelector('input[name="rating"]:checked');
+            if(!nom || !msg || !star) return alert("Por favor completa todo el formulario.");
+            
+            const texto = `*RESEÑA SOLARIS PERUVIAN*\n*Cliente:* ${nom}\n*Calificación:* ${star.value}\n*Reseña:* ${msg}`;
+            window.open(`https://api.whatsapp.com/send?phone=51963713080&text=${encodeURIComponent(texto)}`, '_blank');
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+       <footer class="py-5" style="background-color: #dbc0af;">
+    <div class="container">
+
+        <div class="row text-center text-md-start g-4 justify-content-between align-items-start">
+
+            <!-- LOGO -->
+            <div class="col-md-2">
+               <div class="col-md-2">
+    <div class="d-inline-block overflow-hidden rounded-circle border"
+         style="width: 140px; height: 140px; border-width: 2px !important;">
+
+        <img src="assets/img/portadas/logo.jpeg"
+             class="w-100 h-100 object-fit-cover"
+             alt="Logo Solaris">
+
+    </div>
+</div>
+            </div>
+
+            <!-- TIENDA -->
+            <div class="col-md-2">
+                <h6 class="fw-bold mb-4"
+                    style="color: #9b5f67; letter-spacing: 1px;">
+                    TIENDA
+                </h6>
+
+                <ul class="list-unstyled d-grid gap-2">
+                    <li>
+                        <a href="nosotros.html"
+                           class="text-decoration-none text-dark opacity-75">
+                           Nosotros
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="productos.html"
+                           class="text-decoration-none text-dark opacity-75">
+                           Productos
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contactos.html"
+                           class="text-decoration-none text-dark opacity-75">
+                           Contacto
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- INSPIRACIONES -->
+            <div class="col-md-2">
+                <h6 class="fw-bold mb-4"
+                    style="color: #9b5f67; letter-spacing: 1px;">
+                    INSPIRACIONES
+                </h6>
+
+                <ul class="list-unstyled d-grid gap-2">
+                    <li>
+                        <a href="https://pe.hm.com/"
+                           target="_blank"
+                           class="text-decoration-none text-dark opacity-75">
+                           H&M
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.aeo.com.pe/"
+                           target="_blank"
+                           class="text-decoration-none text-dark opacity-75">
+                           AMERICAN EAGLE
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://corporaciontextil.com.pe/"
+                           target="_blank"
+                           class="text-decoration-none text-dark opacity-75">
+                           CORP. TEXTIL
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- REDES SOCIALES -->
+            <div class="col-md-3">
+    <h6 class="fw-bold mb-4" style="color: #9b5f67; letter-spacing: 1px;">
+        REDES SOCIALES
+    </h6>
+
+    <ul class="list-unstyled d-grid gap-2">
+
+        <li>
+            <a href="https://instagram.com/luneperuvian" target="_blank"
+               class="text-decoration-none text-dark opacity-75 d-flex align-items-center gap-2">
+                <i class="bi bi-instagram"></i>
+                <span>@luneperuvian</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="https://facebook.com/luneperuvian" target="_blank"
+               class="text-decoration-none text-dark opacity-75 d-flex align-items-center gap-2">
+                <i class="bi bi-facebook"></i>
+                <span>/luneperuvian</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="https://tiktok.com/@luneperuvian" target="_blank"
+               class="text-decoration-none text-dark opacity-75 d-flex align-items-center gap-2">
+                <i class="bi bi-tiktok"></i>
+                <span>@luneperuvian</span>
+            </a>
+        </li>
+
+    </ul>
+</div>
+            <!-- LIBRO DE RECLAMACIONES -->
+            <div class="col-md-3 text-center">
+                <a href="libro-reclamaciones.html"
+                   class="text-decoration-none text-dark d-inline-block p-4 border border-secondary-subtle rounded-4 bg-white bg-opacity-25">
+
+                    <span class="material-symbols-outlined fs-1 text-secondary">
+                        menu_book
+                    </span>
+
+                    <p class="small fw-bold mb-0 mt-2 tracking-widest text-uppercase">
+                        Libro de <br> Reclamaciones
+                    </p>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- COPYRIGHT -->
+        <div class="text-center mt-5 pt-4 border-top border-secondary-subtle">
+            <p class="small text-muted mb-0">
+                &copy; 2026 Solaris Peruvian. Hecho con amor.
+            </p>
+        </div>
+
+    </div>
+</footer>
+<script src="assets/js/script.js"></script>
+
+</body>
+</html>
