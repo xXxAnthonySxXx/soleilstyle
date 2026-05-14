@@ -1,306 +1,463 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
-<head >
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Libro de Reclamaciones</title>
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<head>
+
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>Libro de Reclamaciones | SOLEIL STYLE</title>
+
+    <meta name="description"
+        content="Libro de reclamaciones oficial de Soleil Style.">
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon"
+        href="assets/img/portadas/logo.jpeg"
+        type="image/x-icon">
+
+    <!-- BOOTSTRAP -->
     <link rel="stylesheet"
-href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;700&family=Epilogue:wght@400;600&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
-     <link rel="shortcut icon" href="assets/img/portadas/logo.jpeg" type="image/x-icon">
-    <link rel="shortcut icon" href="assets/img/iconos/logo.jpg" type="image/x-icon">
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;700&amp;family=Epilogue:wght@400;600&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
-    <script
-        id="tailwind-config"> tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary-fixed-variant": "#613f1b", "outline-variant": "#cec5bb", "error-container": "#ffdad6", "on-tertiary-fixed": "#2c1600", "secondary-fixed": "#ffd9e0", "on-primary-fixed": "#221a0f", "outline": "#7d766d", "surface-tint": "#675d4e", "on-secondary-container": "#7b545d", "surface-bright": "#fff8f1", "surface-dim": "#dfd9d1", "on-error-container": "#93000a", "secondary": "#7a545d", "tertiary": "#7c5730", "surface-variant": "#e8e1da", "secondary-container": "#ffcdd7", "primary-fixed": "#efe0cd", "primary": "#675d4e", "secondary-fixed-dim": "#ebbac4", "on-tertiary-container": "#866039", "on-secondary-fixed": "#2f131a", "inverse-primary": "#d2c4b2", "primary-fixed-dim": "#d2c4b2", "on-surface": "#1e1b17", "on-secondary": "#ffffff", "on-secondary-fixed-variant": "#603d45", "tertiary-fixed-dim": "#eebd8f", "on-primary": "#ffffff", "surface-container-low": "#f9f3eb", "inverse-surface": "#33302b", "on-background": "#1e1b17", "on-error": "#ffffff", "on-primary-container": "#716657", "inverse-on-surface": "#f7f0e8", "on-tertiary": "#ffffff", "on-primary-fixed-variant": "#4f4538", "on-surface-variant": "#4c463e", "surface": "#fff8f1", "tertiary-fixed": "#ffdcbe", "surface-container": "#f4ede5", "tertiary-container": "#ffe3cb", "surface-container-highest": "#e8e1da", "error": "#ba1a1a", "primary-container": "#f5e6d3", "surface-container-lowest": "#ffffff", "surface-container-high": "#eee7df", "background": "#fff8f1" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "lg": "48px", "container-max": "1280px", "xs": "8px", "sm": "16px", "base": "4px", "xl": "80px", "gutter": "24px", "md": "24px" }, "fontFamily": { "h3": ["Noto Serif"], "h2": ["Noto Serif"], "label-caps": ["Epilogue"], "h1": ["Noto Serif"], "body-lg": ["Epilogue"], "body-md": ["Epilogue"] }, "fontSize": { "h3": ["24px", { "lineHeight": "1.4", "fontWeight": "500" }], "h2": ["36px", { "lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "400" }], "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600" }], "h1": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "400" }], "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }], "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }] } }, }, } </script>
-    <style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
-        }
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+        
 
-        .hero-gradient {
-            background: linear-gradient(135deg, #F5E6D3 0%, #FFD9E0 100%);
-        }
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-        .editorial-image-mask {
-            clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
-        }
-    </style>
-    <link rel="icon" href="favicon.jpg" type="image/png">
-    <link rel="stylesheet" href="./estilos.css">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;700&family=Epilogue:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- INTL TEL INPUT -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.2.1/css/intlTelInput.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+        href="assets/css/estilos.css">
+
 </head>
 
+<body>
 
-<body class="bg-background text-on-background font-body-md selection:bg-secondary-container pagina-reclamos">
-    <header style="background-color: #dbc0af;"
-        class="fixed top-0 left-0 right-0 z-50 bg-[#F5E6D3]/90 backdrop-blur-md dark:bg-stone-950/90 border-b border-stone-200/50 dark:border-stone-800/50 shadow-sm">
-        <nav class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
-            <a href="index.html" class="logo-tienda">
-                <span class="lune">SOLEIL</span><br>
-                <span class="peruvian text-white">S T Y L E</span>
-            </a>
-            <div
-                class="hidden md:flex items-center gap-lg font-serif tracking-tight text-stone-800 dark:text-stone-200">
-                <a class="text-stone-500 dark:text-stone-400 hover:text-stone-800 dark:hover:text-stone-200 hover:opacity-70 transition-opacity duration-300"
-                    href="index.html">Inicio</a> <a
-                    class="text-stone-500 dark:text-stone-400 hover:text-stone-800 dark:hover:text-stone-200 hover:opacity-70 transition-opacity duration-300"
-                    href="productos.html">Productos</a> <a
-                    class="text-stone-500 dark:text-stone-400 hover:text-stone-800 dark:hover:text-stone-200 hover:opacity-70 transition-opacity duration-300"
-                    href="nosotros.html">Nosotros</a> <a
-                    class="text-stone-500 dark:text-stone-400 hover:text-stone-800 dark:hover:text-stone-200 hover:opacity-70 transition-opacity duration-300"
-                    href="contactos.html">Contacto</a>
-            </div>
-        </nav>
-    </header>
-<!-- FORMULARIO -->
-<section class="pt-40 pb-16 px-8 bg-[#fff8f1]">
+    <!-- NAVBAR -->
 
-    <div class="max-w-4xl mx-auto">
+    <header>
 
-        <!-- TÍTULO -->
-        <div class="text-center mb-14">
-            <h1 class="text-4xl md:text-5xl font-semibold tracking-wide text-[#1e1b17]">
-                LIBRO DE RECLAMOS
-            </h1>
-            <p class="mt-4 text-lg text-[#4c463e]">
-                Completa tus datos y describe tu reclamo o queja. Nos pondremos en contacto contigo pronto.
-            </p>
-        </div>
+        <nav class="navbar navbar-expand-lg fixed-top py-3 shadow-sm navbar-custom">
 
-        <!-- FORM -->
-        <form id="pedidoForm" class="space-y-10">
+            <div class="container">
 
-            <!-- DATOS -->
-            <fieldset class="space-y-6">
-                <legend class="text-3xl font-medium text-[#1e1b17] mb-6">
-                    Datos personales
-                </legend>
+                <a href="index.html" class="logo-tienda">
 
-                <div>
-                    <label class="block text-lg mb-2">Nombre Completo *</label>
-                    <input type="text"
-                        class="w-full rounded-lg border border-[#d6cfc7] bg-white px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#7a545d]">
-                </div>
+                    <span class="lune">SOLEIL</span><br>
+                    <span class="peruvian">S T Y L E</span>
 
-                <div>
-                    <label class="block text-lg mb-2">Correo Electrónico *</label>
-                    <input type="email"
-                        class="w-full rounded-lg border border-[#d6cfc7] bg-white px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#7a545d]">
-                </div>
+                </a>
 
-                <div>
-                    <label class="block text-lg mb-2">Teléfono *</label>
-                    <input type="tel"
-                        class="w-full rounded-lg border border-[#d6cfc7] bg-white px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#7a545d]">
-                </div>
+                <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav">
 
-                <div>
-                    <label class="block text-lg mb-2">Dirección *</label>
-                    <input type="text"
-                        class="w-full rounded-lg border border-[#d6cfc7] bg-white px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#7a545d]">
-                </div>
-            </fieldset>
+                    <span class="navbar-toggler-icon"></span>
 
-            <!-- RECLAMO -->
-            <fieldset class="space-y-6">
-                <legend class="text-3xl font-medium text-[#1e1b17] mb-6">
-                    Reclamo
-                </legend>
-
-                <div>
-                    <label class="block text-lg mb-2">Modalidad de Compra *</label>
-                    <select
-                        class="w-full rounded-lg border border-[#d6cfc7] bg-white px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#7a545d]">
-                        <option value="">-- Selecciona modalidad --</option>
-                        <option>Presencial</option>
-                        <option>Virtual</option>
-                    </select>
-                </div>
-
-                <div>
-                    <label class="block text-lg mb-2">Descripción</label>
-                    <textarea rows="4"
-                        class="w-full rounded-lg border border-[#d6cfc7] bg-white px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#7a545d]"></textarea>
-                </div>
-            </fieldset>
-
-            <!-- BOTONES -->
-            <div class="flex justify-center gap-4 pt-4">
-                <button type="submit"
-                    class="px-8 py-3 rounded-lg bg-[#7a545d] text-white text-lg hover:bg-[#5f3f46] transition">
-                    Enviar Reclamo
                 </button>
 
-                <a href="index.html"
-                    class="px-8 py-3 rounded-lg bg-stone-500 text-white text-lg hover:bg-stone-600 transition">
-                    Volver
-                </a>
+                <div class="collapse navbar-collapse justify-content-end"
+                    id="navbarNav">
+
+                    <ul class="navbar-nav gap-lg-4">
+
+                        <li class="nav-item">
+                            <a class="nav-link text-dark"
+                                href="index.html">
+                                Inicio
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-dark"
+                                href="productos.html">
+                                Productos
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-dark"
+                                href="nosotros.html">
+                                Nosotros
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-dark"
+                                href="contactos.html">
+                                Contactos
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
             </div>
 
-        </form>
+        </nav>
 
-    </div>
+    </header>
 
-</section>
+    <!-- MAIN -->
 
- <footer class="py-5" style="background-color: #dbc0af;">
+    <main class="main-reclamos">
+
+        <section class="container">
+
+            <div class="form-container">
+
+                <div class="text-center mb-5">
+
+                    <h1 class="display-5 mb-3">
+                        Libro de Reclamaciones
+                    </h1>
+
+                    <p class="text-muted">
+                        Completa el formulario y nos contactaremos contigo.
+                    </p>
+
+                </div>
+
+                <!-- FORM -->
+
+                <form id="pedidoForm">
+
+                    <div class="row g-4">
+
+                        <!-- NOMBRE -->
+
+                        <div class="col-md-6">
+
+                            <label for="nombre" class="form-label">
+                                Nombre Completo *
+                            </label>
+
+                            <input
+                                type="text"
+                                id="nombre"
+                                class="form-control"
+                                required
+                                placeholder="Tu nombre">
+
+                        </div>
+
+                        <!-- CORREO -->
+
+                        <div class="col-md-6">
+
+                            <label for="correo" class="form-label">
+                                Correo Electrónico *
+                            </label>
+
+                            <input
+                                type="email"
+                                id="correo"
+                                class="form-control"
+                                required
+                                placeholder="ejemplo@gmail.com">
+
+                            <small class="text-danger">
+                                Solo correos Gmail.
+                            </small>
+
+                        </div>
+
+                        <!-- TELEFONO -->
+
+                        <div class="col-md-6">
+
+                            <label for="telefono" class="form-label">
+                                Teléfono *
+                            </label>
+
+                           <input
+                            type="tel"
+                            id="telefono"
+                         class="form-control"
+                         required>
+
+                            <small
+                                id="telefonoError"
+                                class="text-danger d-none">
+
+                                Número inválido
+
+                            </small>
+
+                        </div>
+
+                        <!-- DIRECCION -->
+
+                        <div class="col-md-6">
+
+                            <label for="direccion" class="form-label">
+                                Dirección *
+                            </label>
+
+                            <input
+                                type="text"
+                                id="direccion"
+                                class="form-control"
+                                required
+                                placeholder="Tu dirección">
+
+                        </div>
+
+                        <!-- MODALIDAD -->
+
+                        <div class="col-md-6">
+
+                            <label for="modalidad" class="form-label">
+                                Modalidad de Compra *
+                            </label>
+
+                            <select
+                                id="modalidad"
+                                class="form-select"
+                                required>
+
+                                <option value="">
+                                    Selecciona modalidad
+                                </option>
+
+                                <option value="Presencial">
+                                    Presencial
+                                </option>
+
+                                <option value="Virtual">
+                                    Virtual
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                        <!-- DESCRIPCION -->
+
+                        <div class="col-12">
+
+                            <label for="descripcion" class="form-label">
+                                Descripción *
+                            </label>
+
+                            <textarea
+                                id="descripcion"
+                                rows="6"
+                                class="form-control"
+                                required
+                                placeholder="Describe tu reclamo">
+                            </textarea>
+
+                        </div>
+
+                    </div>
+
+                    <!-- BOTON -->
+
+                    <div class="text-center mt-5">
+
+                        <button
+                            type="submit"
+                            class="btn btn-custom">
+
+                            Enviar Reclamo
+
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+
+   <footer class="footer-custom py-5">
+
     <div class="container">
 
         <div class="row text-center text-md-start g-4 justify-content-between align-items-start">
 
             <!-- LOGO -->
             <div class="col-md-2">
-               <div class="col-md-2">
-    <div class="d-inline-block overflow-hidden rounded-circle border"
-         style="width: 140px; height: 140px; border-width: 2px !important;">
 
-        <img src="assets/img/portadas/logo.jpeg"
-             class="w-100 h-100 object-fit-cover"
-             alt="Logo Solaris">
+                <div class="footer-logo-container">
 
-    </div>
-</div>
+                    <img src="assets/img/portadas/logo.jpeg"
+                         class="footer-logo-img"
+                         alt="Logo Solaris">
+
+                </div>
+
             </div>
 
             <!-- TIENDA -->
             <div class="col-md-2">
-                <h6 class="fw-bold mb-4"
-                    style="color: #9b5f67; letter-spacing: 1px;">
+
+                <h6 class="footer-title">
                     TIENDA
                 </h6>
 
                 <ul class="list-unstyled d-grid gap-2">
+
                     <li>
                         <a href="nosotros.html"
-                           class="text-decoration-none text-dark opacity-75">
-                           Nosotros
+                           class="footer-link">
+                            Nosotros
                         </a>
                     </li>
 
                     <li>
                         <a href="productos.html"
-                           class="text-decoration-none text-dark opacity-75">
-                           Productos
+                           class="footer-link">
+                            Productos
                         </a>
                     </li>
 
                     <li>
                         <a href="contactos.html"
-                           class="text-decoration-none text-dark opacity-75">
-                           Contacto
+                           class="footer-link">
+                            Contacto
                         </a>
                     </li>
+
                 </ul>
+
             </div>
 
             <!-- INSPIRACIONES -->
             <div class="col-md-2">
-                <h6 class="fw-bold mb-4"
-                    style="color: #9b5f67; letter-spacing: 1px;">
+
+                <h6 class="footer-title">
                     INSPIRACIONES
                 </h6>
 
                 <ul class="list-unstyled d-grid gap-2">
+
                     <li>
                         <a href="https://pe.hm.com/"
                            target="_blank"
-                           class="text-decoration-none text-dark opacity-75">
-                           H&M
+                           class="footer-link">
+                            H&M
                         </a>
                     </li>
 
                     <li>
                         <a href="https://www.aeo.com.pe/"
                            target="_blank"
-                           class="text-decoration-none text-dark opacity-75">
-                           AMERICAN EAGLE
+                           class="footer-link">
+                            AMERICAN EAGLE
                         </a>
                     </li>
 
                     <li>
                         <a href="https://corporaciontextil.com.pe/"
                            target="_blank"
-                           class="text-decoration-none text-dark opacity-75">
-                           CORP. TEXTIL
+                           class="footer-link">
+                            CORP. TEXTIL
                         </a>
                     </li>
+
                 </ul>
+
             </div>
 
-            <!-- REDES SOCIALES -->
+            <!-- REDES -->
             <div class="col-md-3">
-    <h6 class="fw-bold mb-4" style="color: #9b5f67; letter-spacing: 1px;">
-        REDES SOCIALES
-    </h6>
 
-    <ul class="list-unstyled d-grid gap-2">
+                <h6 class="footer-title">
+                    REDES SOCIALES
+                </h6>
 
-        <li>
-            <a href="https://instagram.com/luneperuvian" target="_blank"
-               class="text-decoration-none text-dark opacity-75 d-flex align-items-center gap-2">
-                <i class="bi bi-instagram"></i>
-                <span>@luneperuvian</span>
-            </a>
-        </li>
+                <ul class="list-unstyled d-grid gap-2">
 
-        <li>
-            <a href="https://facebook.com/luneperuvian" target="_blank"
-               class="text-decoration-none text-dark opacity-75 d-flex align-items-center gap-2">
-                <i class="bi bi-facebook"></i>
-                <span>/luneperuvian</span>
-            </a>
-        </li>
+                    <li>
+                        <a href="https://instagram.com/luneperuvian"
+                           target="_blank"
+                           class="footer-link d-flex align-items-center gap-2">
 
-        <li>
-            <a href="https://tiktok.com/@luneperuvian" target="_blank"
-               class="text-decoration-none text-dark opacity-75 d-flex align-items-center gap-2">
-                <i class="bi bi-tiktok"></i>
-                <span>@luneperuvian</span>
-            </a>
-        </li>
+                            <i class="bi bi-instagram"></i>
+                            <span>@soleilstyle</span>
 
-    </ul>
-</div>
-            <!-- LIBRO DE RECLAMACIONES -->
-            <div class="col-md-3 text-center">
-                <a href="libro-reclamaciones.html"
-                   class="text-decoration-none text-dark d-inline-block p-4 border border-secondary-subtle rounded-4 bg-white bg-opacity-25">
+                        </a>
+                    </li>
 
-                    <span class="material-symbols-outlined fs-1 text-secondary">
-                        menu_book
-                    </span>
+                    <li>
+                        <a href="https://facebook.com/luneperuvian"
+                           target="_blank"
+                           class="footer-link d-flex align-items-center gap-2">
 
-                    <p class="small fw-bold mb-0 mt-2 tracking-widest text-uppercase">
-                        Libro de <br> Reclamaciones
-                    </p>
-                </a>
+                            <i class="bi bi-facebook"></i>
+                            <span>/soleilstyle</span>
+
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://tiktok.com/@luneperuvian"
+                           target="_blank"
+                           class="footer-link d-flex align-items-center gap-2">
+
+                            <i class="bi bi-tiktok"></i>
+                            <span>@soleilstyle</span>
+
+                        </a>
+                    </li>
+
+                </ul>
+
             </div>
 
         </div>
 
         <!-- COPYRIGHT -->
         <div class="text-center mt-5 pt-4 border-top border-secondary-subtle">
+
             <p class="small text-muted mb-0">
                 &copy; 2026 Solaris Peruvian. Hecho con amor.
             </p>
+
         </div>
 
     </div>
-</footer>
- <script src="assets/js/script.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</footer>
+
+    <!-- BOOTSTRAP -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- INTL TEL INPUT -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.2.1/js/intlTelInput.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.2.1/js/utils.js"></script>
+
+<!--  JS -->
+<script src="assets/js/script.js"></script>
+   
+
 </body>
 
 </html>

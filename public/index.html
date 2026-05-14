@@ -18,7 +18,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
 <body>
  <header>
     <nav class="navbar navbar-expand-lg fixed-top py-3 shadow-sm"
-     style="background-color: #dbc0af;">
+    >
         <div class="container">
                <a href="index.html" class="logo-tienda">
                 <span class="lune ">SOLEIL</span><br>
@@ -32,7 +32,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
                     <li class="nav-item"><a class="nav-link fw-bold text-dark border-bottom border-dark" href="index.html">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link text-muted" href="productos.html">Productos</a></li>
                     <li class="nav-item"><a class="nav-link text-muted" href="nosotros.html">Nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link text-muted" href="contactos.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link text-muted" href="contactos.html">Contactos</a></li>
                 </ul>
             </div>
         </div>
@@ -46,275 +46,470 @@ data-bs-ride="carousel"
 data-bs-pause="false">
 
     <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="assets/img/portadas/PORTADA.jpeg" alt="Nueva Colección Solaris 1">
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/img/portadas/PORTADA2.jpeg" alt="Nueva Colección Solaris 2">
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/img/portadas/PORTADA3.jpeg" alt="Nueva Colección Solaris 3">
-                </div>
+
+    <div class="carousel-item active">
+        <img src="assets/img/portadas/PORTADA.jpeg"
+             alt="Nueva Colección Solaris 1">
+    </div>
+
+    <div class="carousel-item">
+        <img src="assets/img/portadas/PORTADA2.jpeg"
+             alt="Nueva Colección Solaris 2">
+    </div>
+
+    <div class="carousel-item">
+        <img src="assets/img/portadas/img3.jpg"
+             alt="Nueva Colección Solaris 3">
+    </div>
+
+</div>
+
+
+<div class="hero-caption">
+
+    <span class="hero-subtitle">
+        Nueva Colección
+    </span>
+
+    <h1 class="display-1 fw-normal mb-5">
+        Belleza. Esencia.
+    </h1>
+
+    <a href="#productos"
+       class="btn btn-outline-light rounded-pill px-5 py-3 text-uppercase">
+
+        Descubrir
+
+    </a>
+
+</div>
+
+
+<button class="carousel-control-prev"
+        type="button"
+        data-bs-target="#heroCarousel"
+        data-bs-slide="prev">
+
+    <span class="carousel-control-prev-icon"
+          aria-hidden="true">
+    </span>
+
+    <span class="visually-hidden">
+        Anterior
+    </span>
+
+</button>
+
+
+<button class="carousel-control-next"
+        type="button"
+        data-bs-target="#heroCarousel"
+        data-bs-slide="next">
+
+    <span class="carousel-control-next-icon"
+          aria-hidden="true">
+    </span>
+
+    <span class="visually-hidden">
+        Siguiente
+    </span>
+
+</button>
+
+</section>
+
+
+<section class="container py-5 my-5">
+
+    <div class="row align-items-center g-5">
+
+        <div class="col-md-6">
+
+            <span class="about-subtitle">
+                ¿QUIÉNES SOMOS?
+            </span>
+
+            <h2 class="display-5 my-4">
+                Soleil Style es tu destino de moda femenina...
+            </h2>
+
+            <p class="text-muted lead">
+
+                Creamos prendas que combinan la elegancia con la
+                frescura de lo cotidiano, pensadas para acompañarte
+                en cada momento.
+
+                Queremos ser ese "must-have" en tu clóset.
+
+            </p>
+
+        </div>
+
+        <div class="col-md-5 offset-md-1">
+
+            <div class="position-relative">
+
+                <video
+                    src="assets/video/VIDEOPORTADA.mp4"
+                    class="video-portada img-fluid rounded-4 shadow-lg"
+                    autoplay
+                    loop
+                    controls>
+                </video>
+
+                <div class="video-circle"></div>
+
             </div>
-            
-            <div class="hero-caption">
-                <span class="text-uppercase tracking-widest small mb-3 d-block" style="letter-spacing: 0.4em;">Nueva Colección</span>
-                <h1 class="display-1 fw-normal mb-5">Belleza. Esencia.</h1>
-                <a href="#productos" class="btn btn-outline-light rounded-pill px-5 py-3 text-uppercase">Descubrir</a>
-            </div>
 
-            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Siguiente</span>
-            </button>
-        </section>
-
-        <section class="container py-5 my-5">
-            <div class="row align-items-center g-5">
-                <div class="col-md-6">
-                    <span class="text-uppercase fw-bold text-secondary small" style="letter-spacing: 2px;">¿QUIÉNES SOMOS?</span>
-                    <h2 class="display-5 my-4">Solaris Peruvian es tu destino de moda femenina...</h2>
-                    <p class="text-muted lead">
-                        Creamos prendas que combinan la elegancia con la frescura de lo cotidiano, pensadas para acompañarte en cada momento. 
-                        Queremos ser ese "must-have" en tu clóset.
-                    </p>
-                </div>
-              <div class="col-md-5 offset-md-1">
-    <div class="position-relative">
-
-        <video 
-            src="assets/video/VIDEOPORTADA.mp4"
-            class="img-fluid rounded-4 shadow-lg"
-            style="transform: rotate(2deg);"
-            autoplay
-            loop
-            controls
-        >
-        </video>
-
-        <div class="position-absolute bottom-0 start-0 translate-middle-x bg-secondary-subtle rounded-circle opacity-25"
-             style="width: 200px; height: 200px; z-index: -1; filter: blur(40px);">
         </div>
 
     </div>
+
+</section>
 </div>
             </div>
         </section>
-        <section class="py-5" style="background-color: #fcf8f3;">
-            <div class="container">
-                <div class="row g-4">
-                    <div class="col-md-6">
-                        <div class="card h-100 border-0 shadow-sm p-5" style="border-radius: 20px;">
-                            <div class="card-body">
-                                <span class="material-symbols-outlined mb-3" style="color: var(--secondary-color); font-size: 40px;">auto_awesome</span>
-                                <h3 class="display-6 mb-4" style="color: var(--primary-color);">Nuestra Misión</h3>
-                                <p class="lead text-muted">
-                                    Empoderar el estilo personal de cada mujer, brindando herramientas para expresar su versión más genuina a través de prendas que cuentan una historia de confianza y sofisticación.
-                                </p>
-                            </div>
-                        </div>
+        <section class="py-5">
+
+    <div class="container">
+
+        <div class="row g-4">
+
+            <div class="col-md-6">
+
+                <div class="card h-100 border-0 shadow-sm p-5 info-card-radius">
+
+                    <div class="card-body">
+
+                        <span class="material-symbols-outlined mb-3 mission-icon">
+                            auto_awesome
+                        </span>
+
+                        <h3 class="display-6 mb-4 mission-title">
+                            Nuestra Misión
+                        </h3>
+
+                        <p class="lead text-muted">
+
+                            Empoderar el estilo personal de cada mujer,
+                            brindando herramientas para expresar su
+                            versión más genuina a través de prendas
+                            que cuentan una historia de confianza
+                            y sofisticación.
+
+                        </p>
+
                     </div>
-                    <div class="col-md-6">
-                        <div class="card h-100 border-0 shadow-sm p-5 text-white" style="border-radius: 20px; background-color: var(--primary-color);">
-                            <div class="card-body">
-                                <span class="material-symbols-outlined mb-3" style="font-size: 40px;">visibility</span>
-                                <h3 class="display-6 mb-4 text-white">Nuestra Visión</h3>
-                                <p class="lead">
-                                    Inspirar a cada mujer a expresarse con libertad y confianza, convirtiéndonos en el referente de una belleza que nace desde lo simple, lo auténtico y lo esencial.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
+
             </div>
-        </section>
+
+            <div class="col-md-6">
+
+                <div class="card h-100 border-0 shadow-sm p-5 text-white vision-card">
+
+                    <div class="card-body">
+
+                        <span class="material-symbols-outlined mb-3 vision-icon">
+                            visibility
+                        </span>
+
+                        <h3 class="display-6 mb-4 text-white">
+                            Nuestra Visión
+                        </h3>
+
+                        <p class="lead">
+
+                            Inspirar a cada mujer a expresarse con
+                            libertad y confianza, convirtiéndonos
+                            en el referente de una belleza que nace
+                            desde lo simple, lo auténtico y lo esencial.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
         <section id="productos" class="container py-5 mt-5">
-            <div class="mb-5">
-                <span class="text-secondary fw-bold text-uppercase small tracking-widest">PRODUCTOS DESTACADOS</span>
+
+    <div class="mb-5">
+        <span class="section-title">
+            PRODUCTOS DESTACADOS
+        </span>
+    </div>
+
+    <div class="row g-4">
+
+        <!-- PRODUCTO 1 -->
+        <div class="col-md-4">
+
+            <div class="product-cardl text-center">
+
+                <div class="img-container mb-3">
+
+                    <img src="assets/img/productos/prod-10.jpg"
+                         class="product-img"
+                         alt="Anastasia Dress">
+
+                    <button class="btn-buy-overlay">
+                        COMPRAR
+                    </button>
+
+                </div>
+
+                <h4 class="h5">
+                    Anastasia Dress
+                </h4>
+
+                <p class="product-price">
+                    S/ 70.00
+                </p>
+
             </div>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="product-card text-center">
-                        <div class="img-container mb-3">
-                            <img src="assets/img/productos/prod-10.jpg" class="w-100 h-100 object-fit-cover" alt="Anastasia Dress">
-                            <button class="btn btn-light btn-buy-overlay rounded-pill px-4 shadow-sm fw-bold">COMPRAR</button>
-                        </div>
-                        <h4 class="h5">Anastasia Dress</h4>
-                        <p class="text-secondary fw-bold">S/ 70.00</p>
-                    </div>
+
+        </div>
+
+        <!-- PRODUCTO 2 -->
+        <div class="col-md-4">
+
+            <div class="product-cardl text-center">
+
+                <div class="img-container mb-3">
+
+                    <img src="assets/img/productos/prod-30.jpg"
+                         class="product-img"
+                         alt="Barrier Restore Cream">
+
+                    <button class="btn-buy-overlay">
+                        COMPRAR
+                    </button>
+
                 </div>
-                <div class="col-md-4">
-                    <div class="product-card text-center">
-                        <div class="img-container mb-3">
-                            <img src="assets/img/productos/prod-30.jpg" class="w-100 h-100 object-fit-cover" alt="Barrier Restore Cream">
-                            <button class="btn btn-light btn-buy-overlay rounded-pill px-4 shadow-sm fw-bold">COMPRAR</button>
-                        </div>
-                        <h4 class="h5">Barrier Restore Cream</h4>
-                        <p class="text-secondary fw-bold">S/ 220.00</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="product-card text-center">
-                        <div class="img-container mb-3">
-                            <img src="assets/img/productos/prod-11.jpg" class="w-100 h-100 object-fit-cover" alt="Ivonne Dress">
-                            <button class="btn btn-light btn-buy-overlay rounded-pill px-4 shadow-sm fw-bold">COMPRAR</button>
-                        </div>
-                        <h4 class="h5">Ivonne Dress</h4>
-                        <p class="text-secondary fw-bold">S/ 50.00</p>
-                    </div>
-                </div>
+
+                <h4 class="h5">
+                    Barrier Restore Cream
+                </h4>
+
+                <p class="product-price">
+                    S/ 220.00
+                </p>
+
             </div>
-        </section>
+
+        </div>
+
+        <!-- PRODUCTO 3 -->
+        <div class="col-md-4">
+
+            <div class="product-cardl text-center">
+
+                <div class="img-container mb-3">
+
+                    <img src="assets/img/productos/prod-11.jpg"
+                         class="product-img"
+                         alt="Ivonne Dress">
+
+                    <button class="btn-buy-overlay">
+                        COMPRAR
+                    </button>
+
+                </div>
+
+                <h4 class="h5">
+                    Ivonne Dress
+                </h4>
+
+                <p class="product-price">
+                    S/ 50.00
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
     </main>
 
-   <footer class="py-5" style="background-color: #dbc0af;">
+    <footer class="footer-custom py-5">
+
     <div class="container">
 
         <div class="row text-center text-md-start g-4 justify-content-between align-items-start">
 
             <!-- LOGO -->
             <div class="col-md-2">
-                <div class="col-md-2">
-    <div class="d-inline-block overflow-hidden rounded-circle border"
-         style="width: 140px; height: 140px; border-width: 2px !important;">
 
-        <img src="assets/img/portadas/logo.jpeg"
-             class="w-100 h-100 object-fit-cover"
-             alt="Logo Solaris">
+                <div class="footer-logo-container">
 
-    </div>
-</div>
+                    <img src="assets/img/portadas/logo.jpeg"
+                         class="footer-logo-img"
+                         alt="Logo Solaris">
+
+                </div>
+
             </div>
 
             <!-- TIENDA -->
             <div class="col-md-2">
-                <h6 class="fw-bold mb-4"
-                    style="color: #9b5f67; letter-spacing: 1px;">
+
+                <h6 class="footer-title">
                     TIENDA
                 </h6>
 
                 <ul class="list-unstyled d-grid gap-2">
+
                     <li>
                         <a href="nosotros.html"
-                           class="text-decoration-none text-dark opacity-75">
-                           Nosotros
+                           class="footer-link">
+                            Nosotros
                         </a>
                     </li>
 
                     <li>
                         <a href="productos.html"
-                           class="text-decoration-none text-dark opacity-75">
-                           Productos
+                           class="footer-link">
+                            Productos
                         </a>
                     </li>
 
                     <li>
                         <a href="contactos.html"
-                           class="text-decoration-none text-dark opacity-75">
-                           Contacto
+                           class="footer-link">
+                            Contacto
                         </a>
                     </li>
+
                 </ul>
+
             </div>
 
             <!-- INSPIRACIONES -->
             <div class="col-md-2">
-                <h6 class="fw-bold mb-4"
-                    style="color: #9b5f67; letter-spacing: 1px;">
+
+                <h6 class="footer-title">
                     INSPIRACIONES
                 </h6>
 
                 <ul class="list-unstyled d-grid gap-2">
+
                     <li>
                         <a href="https://pe.hm.com/"
                            target="_blank"
-                           class="text-decoration-none text-dark opacity-75">
-                           H&M
+                           class="footer-link">
+                            H&M
                         </a>
                     </li>
 
                     <li>
                         <a href="https://www.aeo.com.pe/"
                            target="_blank"
-                           class="text-decoration-none text-dark opacity-75">
-                           AMERICAN EAGLE
+                           class="footer-link">
+                            AMERICAN EAGLE
                         </a>
                     </li>
 
                     <li>
                         <a href="https://corporaciontextil.com.pe/"
                            target="_blank"
-                           class="text-decoration-none text-dark opacity-75">
-                           CORP. TEXTIL
+                           class="footer-link">
+                            CORP. TEXTIL
                         </a>
                     </li>
+
                 </ul>
+
             </div>
 
-            <!-- REDES SOCIALES -->
+            <!-- REDES -->
             <div class="col-md-3">
-    <h6 class="fw-bold mb-4" style="color: #9b5f67; letter-spacing: 1px;">
-        REDES SOCIALES
-    </h6>
 
-    <ul class="list-unstyled d-grid gap-2">
+                <h6 class="footer-title">
+                    REDES SOCIALES
+                </h6>
 
-        <li>
-            <a href="https://instagram.com/luneperuvian" target="_blank"
-               class="text-decoration-none text-dark opacity-75 d-flex align-items-center gap-2">
-                <i class="bi bi-instagram"></i>
-                <span>@luneperuvian</span>
-            </a>
-        </li>
+                <ul class="list-unstyled d-grid gap-2">
 
-        <li>
-            <a href="https://facebook.com/luneperuvian" target="_blank"
-               class="text-decoration-none text-dark opacity-75 d-flex align-items-center gap-2">
-                <i class="bi bi-facebook"></i>
-                <span>/luneperuvian</span>
-            </a>
-        </li>
+                    <li>
+                        <a href="https://instagram.com/luneperuvian"
+                           target="_blank"
+                           class="footer-link d-flex align-items-center gap-2">
 
-        <li>
-            <a href="https://tiktok.com/@luneperuvian" target="_blank"
-               class="text-decoration-none text-dark opacity-75 d-flex align-items-center gap-2">
-                <i class="bi bi-tiktok"></i>
-                <span>@luneperuvian</span>
-            </a>
-        </li>
+                            <i class="bi bi-instagram"></i>
+                            <span>@soleilstyle</span>
 
-    </ul>
-</div>
-            <!-- LIBRO DE RECLAMACIONES -->
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://facebook.com/luneperuvian"
+                           target="_blank"
+                           class="footer-link d-flex align-items-center gap-2">
+
+                            <i class="bi bi-facebook"></i>
+                            <span>/soleilstyle</span>
+
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://tiktok.com/@luneperuvian"
+                           target="_blank"
+                           class="footer-link d-flex align-items-center gap-2">
+
+                            <i class="bi bi-tiktok"></i>
+                            <span>@soleilstyle</span>
+
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- LIBRO -->
             <div class="col-md-3 text-center">
-                <a href="libro-reclamaciones.html"
-                   class="text-decoration-none text-dark d-inline-block p-4 border border-secondary-subtle rounded-4 bg-white bg-opacity-25">
 
-                    <span class="material-symbols-outlined fs-1 text-secondary">
+                <a href="libro-reclamaciones.html"
+                   class="footer-book">
+
+                    <span class="material-symbols-outlined footer-book-icon">
                         menu_book
                     </span>
 
-                    <p class="small fw-bold mb-0 mt-2 tracking-widest text-uppercase">
+                    <p class="footer-book-text">
                         Libro de <br> Reclamaciones
                     </p>
+
                 </a>
+
             </div>
 
         </div>
 
         <!-- COPYRIGHT -->
         <div class="text-center mt-5 pt-4 border-top border-secondary-subtle">
+
             <p class="small text-muted mb-0">
                 &copy; 2026 Solaris Peruvian. Hecho con amor.
             </p>
+
         </div>
 
     </div>
+
 </footer>
+   
 <script src="assets/js/script.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

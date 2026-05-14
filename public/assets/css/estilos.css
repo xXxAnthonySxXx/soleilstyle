@@ -1,341 +1,1354 @@
 /* ========================================
-   SOLARIS PERUVIAN - ESTILOS GLOBALES
-   ========================================
-*/
+   SOLEIL STYLE - ESTILOS GLOBALES
+======================================== */
 
-/* --- FUENTES --- */
+
+/* ========================================
+   FUENTES
+======================================== */
+
 @font-face {
+
     font-family: 'Ahsing';
-    src: url('../fonts/typogama-ahsing.otf') format('opentype');
+
+    src: url('../fonts/typogama-ahsing.otf')
+    format('opentype');
+
     font-weight: normal;
+
     font-style: normal;
+
 }
 
-/* --- VARIABLES DE MARCA --- */
+
+/* ========================================
+   VARIABLES GLOBALES
+======================================== */
+
 :root {
-    --primary-color: #675d4e;       /* Tono tierra principal */
-    --secondary-color: #7a545d;     /* Tono rosado/vino */
-    --brand-brown: #8b6e56;         /* Café de la marca Solaris */
-    --bg-creme: #F5E6D3;            /* Crema de fondo/navbar */
-    --bg-light: #fff8f1;            /* Blanco hueso de fondo */
-    --text-dark: #1e1b17;           /* Texto casi negro */
-    --accent-soft: #9b5f67;         /* Acento para hover */
-    --white: #ffffff;
+
+    --primary-color: #7a545d;
+    --primary-hover: #5d3d44;
+
+    --secondary-color: #dbc0af;
+
+    --background-color: #fff8f1;
+
+    --text-color: #1e1b17;
+
+    --text-muted: #6b6b6b;
+
+    --border-color: #d6cfc7;
+
+    --shadow-soft:
+        0 10px 30px rgba(0,0,0,.06);
+
+    --transition:
+        all .3s ease;
+
 }
 
-/* --- RESET Y ESTILOS BASE --- */
-header{
-    padding: 0%;
-}
-body {
+
+/* ========================================
+   RESET
+======================================== */
+
+* {
+
     margin: 0;
     padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+body {
+
     font-family: 'Epilogue', sans-serif;
-    background-color: #fdf8f4;
+
+    background-color: var(--background-color);
+
+    color: var(--text-color);
+
+    overflow-x: hidden;
+
 }
 
-h1, h2, h3, h4, .font-serif {
-    font-family: 'Noto Serif', serif;
-}
+img {
 
-/* --- NAVBAR Y LOGO --- */
-.navbar-SOLARIS {
-    background-color: rgba(245, 230, 211, 0.9) !important;
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(0,0,0,0.05);
-    z-index: 1050;
-}
-.navbar{
-    background-color: #dbc0af;
-    margin-bottom: 0 !important;
-}
+    max-width: 100%;
 
-.logo-tienda { 
-    text-decoration: none;
-    color: inherit;
-    line-height: 1;
-    display: inline-block; 
-}
-
-.peruvian{
-    color: white;
-}
-.lune{
-    font-size: 20px
-    
-}
-
-
-
-
-.nav-link:hover {
-    color: var(--accent-soft) !important;
-}
-.nav-link{
-    color: #6b6b6b;
-    text-decoration: none;
-    transition: 0.3s;
-    padding-bottom: 5px;
-}
-
-.nav-link.active{
-    color: black;
-    font-weight: 600;
-    border-bottom: 2px solid black;
-}
-
-/* --- HERO SECTION --- */
-
-.carousel-item img {
-    height: 85vh;
-    width: 100%;
-    object-fit: cover;
-    filter: brightness(0.70);
-    border-radius: 0%;
-  
-}
-#heroCarousel{
-    border-radius: 0;
-    overflow: hidden;
-    padding-top: 0%;
-    margin-top: 0;
-}
-
-.carousel,
-.carousel-inner,
-.carousel-item img{
-    border-radius: 0 !important;
-    margin-top: 0%;
-     margin: 0 !important;
-    padding: 0 !important;
-}
-.hero-caption {
-     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-    text-align: center;
-    color: white;
-}
-#inicio{
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-}
-#inicio img{
-     width: 100%;
-    height: 300vh;
-    object-fit: cover;
     display: block;
+
 }
 
-/* --- PRODUCTOS Y FILTROS --- */
-.product-card {
-    border: none;
-    background: transparent;
-    transition: transform 0.3s ease;
-    margin-bottom: 2rem;
+a {
+
+    text-decoration: none;
+
 }
 
-.product-card:hover { 
-    transform: translateY(-8px);
+
+/* ========================================
+   TIPOGRAFÍA
+======================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.font-serif {
+
+    font-family: 'Noto Serif', serif;
+
 }
 
-.img-container {
-    position: relative;
-    overflow: hidden;
-    border-radius: 15px;
-    aspect-ratio: 3/4;
-    background-color: #eee;
-}
 
-.img-container img {
-    transition: transform 0.7s ease;
-}
+/* ========================================
+   UTILIDADES
+======================================== */
 
-.product-card:hover img {
-    transform: scale(1.05);
-}
+.tracking-widest {
 
-.btn-buy-overlay {
-    position: absolute;
-    bottom: -60px;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: all 0.4s ease;
-    opacity: 0;
-    white-space: nowrap;
-}
+    letter-spacing: .25em !important;
 
-.product-card:hover .btn-buy-overlay {
-    bottom: 20px;
-    opacity: 1;
-}
-
-.filter-btn {
-    transition: all 0.3s ease;
-    border-width: 2px;
-}
-
-.filter-btn.active {
-    background-color: var(--secondary-color) !important;
-    color: var(--white) !important;
-    border-color: var(--secondary-color) !important;
-    box-shadow: 0 4px 12px rgba(122, 84, 93, 0.3);
-}
-
-.producto-item { 
-    transition: opacity 0.4s ease, transform 0.4s ease;
-    will-change: opacity, transform;
-}
-
-/* --- SECCIÓN NOSOTROS / EQUIPO --- */
-.team-card {
-    background: var(--white);
-    border-radius: 20px;
-    padding: 20px;
-    transition: all 0.4s ease;
-    border: 1px solid rgba(0,0,0,0.05);
-    height: 100%;
-}
-
-.team-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
-}
-
-.photo-frame {
-    width: 100%;
-    aspect-ratio: 3/4;
-    border-radius: 15px;
-    overflow: hidden;
-    margin-bottom: 15px;
-    background: #eee;
-}
-
-.photo-frame img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* --- FOOTER --- */
-footer {
-    background-color: var(--bg-creme);
 }
 
 .transition {
-    transition: all 0.3s ease;
+
+    transition: var(--transition);
+
 }
 
-.transition:hover {
-    background-color: rgba(0,0,0,0.05) !important;
-    transform: scale(1.02);
+
+/* ========================================
+   ICONOS
+======================================== */
+
+.material-symbols-outlined {
+
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 300,
+        'GRAD' 0,
+        'opsz' 24;
+
 }
 
-/* --- UTILIDADES --- */
-.tracking-widest {
-    letter-spacing: 0.25em !important;
+
+/* ========================================
+   NAVBAR
+======================================== */
+
+header {
+
+    padding: 0;
+
 }
+
+.navbar {
+
+    background-color: var(--secondary-color);
+
+    backdrop-filter: blur(10px);
+
+    border-bottom: 1px solid rgba(0,0,0,.05);
+
+    z-index: 1050;
+
+}
+
+.logo-tienda {
+
+    display: inline-block;
+
+    line-height: 1;
+
+}
+
+.lune {
+
+    color: var(--primary-hover);
+
+    font-size: 20px;
+
+}
+
+.peruvian {
+
+    color: white;
+
+}
+
+
+/* LINKS NAVBAR */
+
+.nav-link {
+
+    color: var(--text-muted);
+
+    transition: var(--transition);
+
+    padding-bottom: 5px;
+
+}
+
+.nav-link:hover {
+
+    color: black !important;
+
+}
+
+.nav-link.active {
+
+    color: black !important;
+
+    font-weight: 600;
+
+    border-bottom: 2px solid black;
+
+}
+
+
+/* ========================================
+   MAIN
+======================================== */
 
 main {
+
     padding-top: 1px;
-}
-.filter-container {
-            overflow-x: auto;
-            white-space: nowrap;
-            padding-bottom: 15px;
-            scrollbar-width: none;
-        }
-        .filter-container::-webkit-scrollbar { display: none; }
 
-        .producto-item {
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .img-wrapper {
-            height: 300px;
-            background-color: #f8f9fa;
-            position: relative;
-            overflow: hidden;
-            border-radius: 20px;
-        }
-
-        .img-wrapper img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.6s ease;
-        }
-
-        .product-card:hover img {
-            transform: scale(1.1);
-        }
-
-        .filter-btn.active {
-            background-color: var(--secondary-color) !important;
-            color: white !important;
-            border-color: var(--secondary-color) !important;
-        }
-       .talla-btn{
-    width: 38px;
-    height: 38px;
-    padding: 0;
-    font-size: 13px;
-    font-weight: 600;
-    border-radius: 8px; /* cuadrados con bordes suaves */
-    transition: all 0.3s ease;
 }
 
-.talla-btn:hover{
-    background-color: black;
-    color: white;
+
+/* ========================================
+   HERO
+======================================== */
+
+#heroCarousel {
+
+    width: 100%;
+
+    height: 100vh;
+
+    overflow: hidden;
+
+    position: relative;
+
+    margin-top: 0;
+
 }
-.slider-mini{
-    height: 420px;
+
+
+/* IMÁGENES */
+
+#heroCarousel .carousel-item {
+
+    height: 100vh;
+
+}
+
+
+#heroCarousel .carousel-item img {
+
+    width: 100%;
+
+    height: 100vh;
+
     object-fit: cover;
+
+    filter: brightness(.78);
+
 }
 
-@media(max-width:768px){
 
-    .slider-mini{
-        height: 250px;
+/* TEXTO ENCIMA */
+
+/* ========================================
+   TEXTO CENTRADO EN EL SLIDER
+======================================== */
+
+.hero-caption {
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    z-index: 10;
+
+    text-align: center;
+
+    color: white;
+
+    width: 100%;
+
+    max-width: 900px;
+
+}
+
+
+/* SUBTÍTULO */
+
+.hero-subtitle {
+
+    font-size: 13px;
+
+    letter-spacing: .45em;
+
+    text-transform: uppercase;
+
+    display: block;
+
+    margin-bottom: 18px;
+
+    opacity: .9;
+
+}
+
+
+/* TÍTULO */
+
+.hero-caption h1 {
+
+    font-family: 'Noto Serif', serif;
+
+    font-size: 82px;
+
+    font-weight: 400;
+
+    line-height: 1.05;
+
+    margin-bottom: 30px;
+
+}
+
+
+/* BOTÓN */
+
+.hero-caption .btn {
+
+    border: 1px solid rgba(255,255,255,.6);
+
+    color: white;
+
+    background: transparent;
+
+    padding: 14px 42px;
+
+    border-radius: 999px;
+
+    font-size: 13px;
+
+    letter-spacing: .15em;
+
+    text-transform: uppercase;
+
+    transition: .3s ease;
+
+}
+
+
+.hero-caption .btn:hover {
+
+    background: white;
+
+    color: black;
+
+}
+/* CONTROLES */
+
+.carousel-control-prev,
+.carousel-control-next {
+
+    width: 7%;
+
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+
+    width: 38px;
+
+    height: 38px;
+
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    #heroCarousel {
+
+        height: 80vh;
+
+    }
+
+    #heroCarousel .carousel-item {
+
+        height: 80vh;
+
+    }
+
+    #heroCarousel .carousel-item img {
+
+        height: 80vh;
+
+    }
+
+    .hero-caption {
+
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        text-align: center;
+
+        width: 90%;
+
+    }
+
+    .hero-caption h1 {
+
+        font-size: 46px;
+
+    }
+
+    .hero-caption .btn {
+
+        padding: 12px 30px;
+
+        font-size: 12px;
+
     }
 
 }
-#sliderSolaris{
-    max-width: 1400px;
-    margin: auto;
+
+/* ========================================
+   ABOUT
+======================================== */
+
+.about-subtitle {
+
+    letter-spacing: 2px;
+
 }
 
-.carousel-inner{
-    border-radius: 25px;
+
+/* VIDEO */
+
+.video-portada {
+
+    transform: rotate(2deg);
+
+}
+
+
+/* CÍRCULO DECORATIVO */
+
+.video-circle {
+
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+
+    transform: translateX(-50%);
+
+    width: 200px;
+    height: 200px;
+
+    z-index: -1;
+
+    border-radius: 50%;
+
+    background-color: var(--bs-secondary-bg-subtle);
+
+    opacity: 0.25;
+
+    filter: blur(40px);
+
+}
+
+
+/* ========================================
+   PRODUCTOS DESTACADOS
+======================================== */
+
+.section-title {
+
+    color: var(--text-muted);
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    font-size: 14px;
+
+    letter-spacing: .25em;
+
+}
+
+
+/* CARD */
+
+.product-cardl {
+
+    border: none;
+
+    background: transparent;
+
+    transition: transform .3s ease;
+
+    margin-bottom: 2rem;
+
+}
+
+.product-cardl:hover {
+
+    transform: translateY(-8px);
+
+}
+
+
+/* CONTENEDOR IMAGEN */
+
+.img-container {
+
+    position: relative;
+
     overflow: hidden;
+
+    
+
+    aspect-ratio: 3/4;
+
+    background-color: #eee;
+
 }
 
-.carousel-item{
-   height: 500px;
-    background-color: transparent;
-}
 
-.slider-mini{
+/* IMAGEN */
+
+.product-img {
+
     width: 100%;
     height: 100%;
+
     object-fit: cover;
-    display: block;
+
+    transition: transform .7s ease;
+
+}
+
+.product-cardl:hover .product-img {
+
+    transform: scale(1.05);
+
+}
+
+
+/* BOTÓN */
+
+.btn-buy-overlay {
+
+    position: absolute;
+
+    left: 50%;
+
+    bottom: -60px;
+
+    transform: translateX(-50%);
+
+    opacity: 0;
+
+    transition: all .4s ease;
+
+    white-space: nowrap;
+
+    border: none;
+
+    background-color: white;
+
+    padding: 12px 26px;
+
+    border-radius: 999px;
+
+    font-weight: 700;
+
+    box-shadow: 0 6px 16px rgba(0,0,0,.12);
+
+}
+
+.product-cardl:hover .btn-buy-overlay {
+
+    bottom: 20px;
+
+    opacity: 1;
+
+}
+
+
+/* PRECIO */
+
+.product-price {
+
+    color: var(--text-muted);
+
+    font-weight: 700;
+
+}
+
+
+/* ========================================
+   FILTROS
+======================================== */
+
+.filter-container {
+
+    overflow-x: auto;
+
+    white-space: nowrap;
+
+    padding-bottom: 15px;
+
+    scrollbar-width: none;
+
+}
+
+.filter-container::-webkit-scrollbar {
+
+    display: none;
+
+}
+
+.filter-btn {
+
+    transition: var(--transition);
+
+    border-width: 2px;
+
+}
+
+.filter-btn.active {
+
+    background-color: var(--secondary-color) !important;
+
+    border-color: var(--secondary-color) !important;
+
+    color: white !important;
+
+}
+
+
+/* ========================================
+   TALLAS
+======================================== */
+
+.talla-btn {
+
+    width: 38px;
+    height: 38px;
+
+    padding: 0;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    border-radius: 8px;
+
+    transition: var(--transition);
+
+}
+
+.talla-btn:hover {
+
+    background-color: black;
+
+    color: white;
+
+}
+
+
+/* ========================================
+   SLIDER
+======================================== */
+
+#sliderSolaris {
+
+    max-width: 1400px;
+
+    margin: auto;
+
+}
+
+.carousel-inner {
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+}
+
+.carousel-item {
+
+    height: 500px;
+
+    background-color: transparent;
+
+}
+
+.slider-mini {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
     filter: none !important;
-    opacity: 1 !important;
+
 }
 
-/* QUITA EL SOMBREADO OSCURO */
-.carousel-item::before{
-    display: none !important;
+
+/* ========================================
+   MISIÓN Y VISIÓN
+======================================== */
+
+.info-card-radius {
+
+    border-radius: 20px;
+
 }
 
-@media(max-width:768px){
+.mission-icon {
 
-    .carousel-item{
+    color: var(--secondary-color);
+
+    font-size: 40px;
+
+}
+
+.mission-title {
+
+    color: var(--primary-color);
+
+}
+
+.vision-card {
+
+    border-radius: 20px;
+
+    background-color: var(--primary-color);
+
+}
+
+.vision-icon {
+
+    font-size: 40px;
+
+}
+
+
+/* ========================================
+   NOSOTROS / TEAM
+======================================== */
+
+.team-card {
+
+    background: white;
+
+    border-radius: 20px;
+
+    padding: 20px;
+
+    height: 100%;
+
+    transition: var(--transition);
+
+    border: 1px solid rgba(0,0,0,.05);
+
+}
+
+.team-card:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow: 0 15px 30px rgba(0,0,0,.1);
+
+}
+
+.photo-frame {
+
+    width: 100%;
+
+    aspect-ratio: 3/4;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    margin-bottom: 15px;
+
+    background: #eee;
+
+}
+
+.photo-frame img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+
+/* ========================================
+   CONTACTO
+======================================== */
+
+.map-container {
+
+    height: 400px;
+
+    overflow: hidden;
+
+    border-radius: 25px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.1);
+
+}
+
+.social-btn {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 12px 20px;
+
+    border-radius: 15px;
+
+    font-weight: 600;
+
+    transition: var(--transition);
+
+}
+
+.social-btn:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+
+}
+
+
+/* ========================================
+   LIBRO DE RECLAMACIONES
+======================================== */
+
+.main-reclamos {
+
+    margin-top: 130px;
+
+}
+
+
+/* CONTENEDOR */
+
+.form-container {
+
+    max-width: 900px;
+
+    margin: auto;
+
+    background-color: white;
+
+    padding: 50px;
+
+    border-radius: 24px;
+
+    box-shadow: var(--shadow-soft);
+
+}
+
+
+/* INPUTS */
+
+.form-control,
+.form-select {
+
+    height: 58px;
+
+    border-radius: 14px;
+
+    border: 1px solid var(--border-color);
+
+    transition: var(--transition);
+
+}
+
+
+/* TEXTAREA */
+
+textarea.form-control {
+
+    min-height: 160px;
+
+    resize: vertical;
+
+}
+
+
+/* FOCUS */
+
+.form-control:focus,
+.form-select:focus {
+
+    border-color: var(--primary-color);
+
+    box-shadow: 0 0 0 0.15rem rgba(122,84,93,.2);
+
+}
+
+
+/* TELÉFONO INTERNACIONAL */
+
+.iti {
+
+    width: 100%;
+
+}
+
+.iti input {
+
+    width: 100%;
+
+    height: 58px;
+
+    border-radius: 14px;
+
+    border: 1px solid #d6cfc7;
+
+    padding-left: 95px !important;
+
+}
+
+.iti__country-list {
+
+    border-radius: 12px;
+
+    font-family: 'Epilogue', sans-serif;
+
+    z-index: 9999;
+
+}
+
+
+/* BOTÓN FORMULARIO */
+
+.btn-custom {
+
+    width: 100%;
+
+    background-color: #9b7d72;
+
+    color: white;
+
+    padding: 16px 40px;
+
+    border-radius: 18px;
+
+    border: none;
+
+    font-weight: 700;
+
+    letter-spacing: 0.5px;
+
+    transition: all 0.3s ease;
+
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+
+}
+
+.btn-custom:hover {
+
+    background-color: #7a5f55;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.18);
+
+}
+
+
+/* ========================================
+   ESTRELLAS RESEÑA
+======================================== */
+
+.star-rating {
+
+    display: flex;
+
+    flex-direction: row-reverse;
+
+    justify-content: center;
+
+    gap: 2px;
+
+}
+
+.star-rating input {
+
+    display: none;
+
+}
+
+.star-rating label {
+
+    font-size: 38px;
+
+    cursor: pointer;
+
+    color: #cfcfcf;
+
+    transition: 0.2s ease;
+
+}
+
+
+/* ESTRELLA ACTIVA */
+
+.star-rating input:checked ~ label::before,
+.star-rating label:hover::before,
+.star-rating label:hover ~ label::before {
+
+    content: "★";
+
+    color: #f5b301;
+
+}
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+.footer-custom {
+
+    background-color: var(--secondary-color);
+
+}
+
+
+/* LOGO */
+
+.footer-logo-container {
+
+    width: 140px;
+    height: 140px;
+
+    overflow: hidden;
+
+    border-radius: 50%;
+
+    border: 2px solid rgba(0,0,0,.1);
+
+    display: inline-block;
+
+}
+
+.footer-logo-img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+
+/* TITULOS */
+
+.footer-title {
+
+    color: #9b5f67;
+
+    letter-spacing: 1px;
+
+    font-weight: 700;
+
+    margin-bottom: 1.5rem;
+
+}
+
+
+/* LINKS */
+
+.footer-link {
+
+    text-decoration: none;
+
+    color: rgba(0,0,0,.75);
+
+    transition: .3s ease;
+
+}
+
+.footer-link:hover {
+
+    color: black;
+
+    transform: translateX(3px);
+
+}
+
+
+/* LIBRO RECLAMACIONES */
+
+.footer-book {
+
+    text-decoration: none;
+
+    color: #7a545d;
+
+    display: inline-flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 18px;
+
+    width: 230px;
+
+    height: 150px;
+
+    border-radius: 24px;
+
+    border: 2px solid rgba(122,84,93,.15);
+
+    background-color: #e6d2c5;
+
+    transition: .3s ease;
+
+}
+
+.footer-book:hover {
+
+    transform: translateY(-4px);
+
+}
+
+
+/* ICONO */
+
+.footer-book-icon {
+
+    font-size: 60px;
+
+    color: #6f6f6f;
+
+}
+
+
+/* TEXTO */
+
+.footer-book-text {
+
+    margin: 0;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    line-height: 1.6;
+
+    letter-spacing: 0.35em;
+
+    text-transform: uppercase;
+
+    text-align: center;
+
+    color: #8b5d66;
+
+}
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 768px) {
+
+    .carousel-item {
+
         height: 300px;
+
     }
+
+    .slider-mini {
+
+        height: 250px;
+
+    }
+
+    .form-container {
+
+        padding: 30px 20px;
+
+    }
+
+    .hero-caption {
+
+        width: 90%;
+
+    }
+
+}
+/* ========================================
+   PRODUCT CARD MÁS COMPACTA
+======================================== */
+
+.product-card {
+
+    background: #fff;
+
+    border-radius: 18px;
+
+    padding: 10px;
+
+    width: 100%;
+
+    max-width: 310px;
+
+    min-height: 420px; /* antes más alto */
+
+    margin: auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: flex-start; /* importante */
+
+    gap: 6px; /* reduce separación */
+
+    box-shadow: 0 2px 10px rgba(0,0,0,.05);
+
+}
+
+
+/* ========================================
+   IMAGEN
+======================================== */
+
+.img-wrapper {
+
+    width: 100%;
+
+    height: 260px; /* imagen más compacta */
+
+    overflow: hidden;
+
+    border-radius: 16px;
+
+    margin-bottom: 6px;
+
+}
+
+.img-wrapper img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+
+/* ========================================
+   TITULO
+======================================== */
+
+.product-card h6 {
+
+    font-size: 14px;
+
+    margin-bottom: 2px;
+
+}
+
+
+/* ========================================
+   DESCRIPCIÓN
+======================================== */
+
+.product-card .text-muted {
+
+    font-size: 12px;
+
+    line-height: 1.3;
+
+    min-height: auto;
+
+    margin-bottom: 4px;
+
+}
+
+
+/* ========================================
+   PRECIO
+======================================== */
+
+.product-card .fw-bold {
+
+    font-size: 16px;
+
+    margin-bottom: 4px;
+
+}
+
+
+/* ========================================
+   TALLAS
+======================================== */
+
+.product-card .d-flex {
+
+    margin-bottom: 4px !important;
+
+}
+
+
+/* ========================================
+   BOTÓN
+======================================== */
+
+.product-card .btn-dark {
+
+    padding: 8px;
+
+    font-size: 14px;
+
+    margin-top: 2px;
 
 }
